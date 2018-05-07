@@ -78,3 +78,15 @@ function initMap(){
     infoWindow.open(map, marker);
   });
 }
+
+// spinner
+var myVar = setTimeout(showPage, 3000);
+
+function myFunction() {
+    myVar
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}

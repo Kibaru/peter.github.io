@@ -8,9 +8,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="icon" type="image/jpg" href="images/p.jpg" style="border-radius: 4px">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="myFunction()">
   <!-- Navbar -->
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #104E8B">
@@ -49,6 +50,9 @@
     </nav>
   </header>
 
+  <!-- loader -->
+  <div id="loader"></div>
+
   <!-- Carousel slide -->
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-pause="false">
     <ol class="carousel-indicators">
@@ -61,17 +65,17 @@
         <img class="first-slide" src="images/1.jpg" alt="First slide">
         <div class="container">
           <div class="carousel-caption text-left">
-            <h3 class="animated bounceInRight" style="animation-delay: 1s;">Behind every successful business is a great accountant.</h3>
+            <h2 class="animated bounceInRight" style="animation-delay: 1s;">Behind every successful business is a great accountant.</h2>
             <p class="animated bounceInLeft" style="animation-delay: 2s;">Lorem ipsum dolor sit amet.</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Read more</a></p>
           </div>
         </div>
       </div>
       <div class="carousel-item active">
-        <img class="second-slide" src="images/2.jpg" alt="Second slide">
+        <img class="second-slide" id="myDiv" src="images/2.jpg" alt="Second slide">
         <div class="container">
           <div class="carousel-caption">
-            <h2 class="animated slideInDown" style="animation-delay: 1s;">One-on-one legal assistance for you case.</h2>
+            <h2 class="animated slideInDown" style="animation-delay: 1s;">One-on-one legal assistance for your case.</h2>
             <p class="animated slideInRight" style="animation-delay: 2s;">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
           </div>
@@ -217,12 +221,12 @@
       <div class="row">
         <div class="col-md-5 mt-4">
           <h3>P.Mwangi</h3>
-          <p><i class="fa fa-home"></i> xxxx xxxx Park, 6th Floor</p>
-          <p><i class="fa fa-road"></i> Waiyaki Way, Nairobi CBD</p>
-          <p><i class="fa fa-envelope-open"></i> P.O Box xxx-00100 Nairobi, Kenya</p>
-          <p><i class="fa fa-phone"></i> (+254)7XXXXXXX</p>
-          <p><i class="fa fa-envelope"></i> xxxxxx@gmail.com</p>
-          <p><i class="fa fa-globe"></i> www.p.mwangi.co.ke</p>
+          <p><i class="fa fa-home"></i>  xxxx xxxx Park, 6th Floor</p>
+          <p><i class="fa fa-road"></i>  Waiyaki Way, Nairobi CBD</p>
+          <p><i class="fa fa-envelope-open"></i>  P.O Box xxx-00100 Nairobi, Kenya</p>
+          <p><i class="fa fa-phone"></i>  (+254)7XXXXXXX</p>
+          <p><i class="fa fa-envelope"></i>  xxxxxx@gmail.com</p>
+          <p><i class="fa fa-globe"></i>  www.p.mwangi.co.ke</p>
         </div>
         <div class="col-md-7 mt-4">
           <h2>Our offices</h2>
