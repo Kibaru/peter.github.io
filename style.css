@@ -13,12 +13,15 @@ body{
 }
 
 #myCarousel, .first-slide, .second-slide, .third-slide{
-  box-sizing: border-box;
   width: 100%;
   height: 450px !important;
   /* object-fit: contain; */
   margin-top: 6px;
   filter: brightness(40%);
+}
+
+.carousel-caption .animated{
+  color: #ccc;
 }
 
 /* floating btn */
